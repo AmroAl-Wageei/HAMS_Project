@@ -1,0 +1,427 @@
+
+* {
+    padding: 0%;
+    margin : 0%;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+body {
+    background:#ffffff;
+    /* background-image: url('../Images/tg.jpg');
+    background-size:cover ; */
+    opacity: 0.8;
+/* background-position-y: url('../Images/mainback.jpeg'); */
+}
+
+
+
+nav {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    width: 280px; 
+     width: 95px;
+    background:#203b59;
+    overflow: hidden;
+    transition: 1s;
+     opacity: 0.6;
+ } 
+ nav:hover {
+    width: 280px;
+    transition: 1s;
+}
+
+.logo {
+    text-align: center;
+    display: flex;
+    margin: 10px 0 0 0;
+    padding-bottom: 3rem;
+}
+.logo img {
+    width: 90px;
+    height: 60px;
+    border-radius: 50%;
+}
+.logo span {
+    font-weight: bold;
+    padding-left: 15px;
+    font-size:18px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+ a {
+    position: relative;
+    width: 280px;
+    font-size: 14px;
+    color : rgb(0, 0, 0);
+    display: table;
+    padding: 10px;
+}
+nav .fas {
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top : 20px;
+    font-size: 20px;
+    text-align: center; 
+    color: #ffffff;   
+}
+nav .fa-house {
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top : 20px;
+    font-size: 20px;
+    text-align: center;    
+    color: #ffffff;   
+}
+
+nav .fa-right-from-bracket{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top : 20px;
+    font-size: 20px;
+    text-align: center; 
+    color: #ffffff;   
+   
+}
+
+
+.nav-item {
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+    color: #ffffff;   
+
+} 
+
+a:hover {
+    background: rgb(255, 255, 255);
+    scale: 0.9;
+}
+
+a:hover i {
+    color: rgb(108, 92, 57);
+    transition: 0.5s;
+
+}
+
+.logout {
+    position: absolute;
+    bottom: 30px;
+    bottom: 30px;
+}
+
+.container {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main Section */
+
+.main {
+    position: relative;
+    padding: 20px;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: xx-large;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.main-top {
+    display:flex;
+    width: 100%;
+}
+
+.main-top i {
+    position:absolute;
+    right: 0;
+    margin: 10px 30px;
+    color : rgb(110, 109, 109);
+    cursor: pointer;
+}
+
+
+.main .user {
+    display: flex;
+    width: 100%;
+    /* border-bottom: 1px solid rgba(0, 0, 0,0.5); */
+}
+
+.user .card {
+    width: 50%;
+    margin: 10px;
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 1px 3px 9px rgb(21, 119, 179);
+    /* background-image: url('../Images/oran.jfif');
+    background-size: cover; */
+}
+
+.user .card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.user .card h4 {
+    text-transform: uppercase;
+}
+
+.user .card p {
+    font-size:12px ;
+    margin-bottom:15px ;
+    text-transform: uppercase;
+}
+
+.user table {
+    margin: auto;
+}
+
+.user .per span {
+    padding: 5px;
+    border-radius: 10px;
+    background: rgb(223, 223, 223);
+}
+
+.user td {
+    font-size: 14px;
+    padding-right:15px;
+}
+
+.user .card button {
+    width: 60%;
+    margin-top: 20px;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid rgb(50, 71, 114);
+}
+
+.user .card button:hover {
+    background: rgb(103, 103, 128);
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Newsss */
+
+#blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px;
+    margin-top: 100px;
+    box-shadow: 1px 3px 9px rgb(21, 119, 179);
+    background-image: url('../Images/pexels-pixabay-265642.jpg');
+    background-size:cover;
+}
+
+.blog-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blog-heading span {
+    color : rgb(59, 58, 113);
+}
+.blog-heading h3 {
+    font-size: 2.4rem;
+    color: rgb(50, 71, 114);
+    font-weight: 600;
+}
+.blog-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+.blog-box {
+    width: 350px;
+    background-color: #ffffff;
+    /* border : 1px solid #0008ff; */
+    margin: 20px;
+    border-radius: 5%;
+    box-shadow: 1px 3px 9px rgb(21, 119, 179);
+
+
+}
+
+.blog-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+
+.blog-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5%;
+
+}
+.blog-text {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.blog-text span {
+    color :rgb(5, 40, 110);;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.blog-text .blog-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: black;
+}
+.blog-text .blog-title:hover {
+    color: rgb(50, 71, 114);
+    transition: all ease 0.3;
+}
+.blog-text p {
+    color : #696a7d;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin : 20px 0px;
+}
+#blog3 {
+    width : 348px;
+    height: 260px;
+}
+.blog-text a {
+    color: #0f0f0f;
+}
+
+.blog-text a:hover {
+    color: #1f00b8;
+    font-weight: 580;
+    transition: all ease 0.3s;
+    scale: 1.1;
+}
+
+@media (max-width:1250px) {
+    .blog-box {
+        width :300px;
+    }
+}
+
+@media (max-width:1110px) {
+    .blog-box {
+        width :70%;
+    }
+}
+@media (max-width:550px) {
+    .blog-box {
+        margin : 20px 10px;
+        width :100%
+    }
+
+    #blog {
+        padding:20px;
+    }
+}
+
+
+/* Slides Section  */
+
+.slide {
+
+    background-color: rgb(255, 255, 255);
+}
+.slider {
+
+    width: 950px;
+    height: 500px;
+    background:url('../Images/ora.jfif');
+    margin: 100px auto;
+    animation: slide 9s infinite;
+    overflow-x: hidden;
+
+}
+
+@keyframes slide {
+
+25% {
+    background: url('../Images/oran.jfif');
+}
+
+50% {
+    background: url('../Images/4-ORANGE.jpg');
+}
+
+70% {
+    background: url('../Images/coding-academy-photo.jpg');
+}
+
+100% {
+    background: url('../Images/amro\ \(2\).jpeg');
+}
+
+}
+
+/* End Slides Section  */

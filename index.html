@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" This is trainer website For evaluate student ">
+    <meta name="author" content=" HAMS Group ">
+    <meta name=" Keyword " content=" trainer , evaluate  , HAMS , Cart , Code , student , coaches , manager ">
+    <meta name="Copyright" content=" Orange Coding Academy . Designed by HAMS Group ">
+    <meta name="refresh" content=" 1 ">
+    <link rel="icon" href="./Images/Main.png" type="image/icon type">
+
+
+    <title> HAMS For Trainer </title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="HAMS.css">
+    <!-- Font Awsome  -->
+    <script src="https://kit.fontawesome.com/3692f58ddc.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-success">
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Create Account</h1>
+                    <div class="social-container">
+                        <a href="https://www.facebook.com/" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.google.com/" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="https://www.linkedin.com/" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your email for registration</span>
+                    <input  id="username" type="text" placeholder="Name" />
+                    <input  id="email" type="email" placeholder="Email" />
+                    <input  id="pass" type="password" placeholder="Password" />
+                    <p id="validp"> </p>
+                    <button  class="submitSginUp" onclick="checkData()">submit </button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <!-- <div class="LogoS">
+                        <a href="#"> <img src="./Images/LogoHAMS.png"  > </a>
+                        <p>HAMS Group </p>
+                    </div> -->
+                <form action="./HomePage/Home.html">
+                    <h1>Sign in</h1>
+                    <div class="social-container">
+                        <a href="https://www.facebook.com/" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.google.com/" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="https://www.linkedin.com/" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your account</span>
+                    <input id="email1" type="email" placeholder="Email" />
+                    <input id="pass1" type="password" placeholder="Password" />
+                    <a href="#">Forgot your password?</a>
+                    <button  class="submitSginip" onclick="checkData()">submit </button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p>To keep connected with us please login with your personal info</p>
+                        <button class="ghost" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello, Friend!</h1>
+                        <p>Enter your personal details and start journey with us</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+<br>
+<br>
+
+
+    <script src="HAMS.js">
+
+
+    </script>
+</body>
+</html>

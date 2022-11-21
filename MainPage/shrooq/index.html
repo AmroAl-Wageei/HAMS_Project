@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../shrooq/index.css">
+    <link rel="icon" href="../Images/Main.png" type="image/icon type">
+
+</head>
+<body>
+
+    
+        <h1>submitTabel </h1>
+            <table class="submitTabel">
+                <tr>
+                    <td>
+                        <form id="form" >
+                            <div>
+                                <label >Id</label>
+                                <input type="text" class="inputinf" id="studentid" required>
+                            </div>
+                            <div>
+                                <label >Student Name</label>
+                                <input type="text" class="inputinf"  id="StudentName" required>
+                            </div>
+                            <div>
+                                <label >Phone Namer</label>
+                                <input type="text" class="inputinf" id="PhoneNamer" required>
+                            </div>
+                            <div>
+                                <label >Education</label>
+                                <input type="text" class="inputinf" id="Education" required >
+                            </div>
+                            <div>
+                                <label>Emial</label>
+                                <input type="email"  class="inputinf"  id="Emial" required>
+                            </div>
+                            <div>
+                                <button  class="submit"  onclick="saveinf()">submit</button>
+                                
+                            </div>
+                        </form>
+                    </td>
+                
+                </tr>
+            </table>
+            <h1>submitTabel </h1>
+            &darr;
+            
+        <div class="resultTabel">
+            <tabel>
+                <td>
+                    <table class="list" id="studentlist">
+                        <!-- <thead>
+                            <tr>
+                                <td>Id</td>
+                                <td>Student Name</td>
+                                <td>Phone Namer</td>
+                                <td>Education</td>
+                                <td>Emial</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody id="data">
+        
+                        </tbody> -->
+                    </table>
+                  
+                </td>
+            </tabel>
+        </div>
+
+
+        <script>
+    
+
+
+
+            let Student= JSON.parse(localStorage.getItem("Student")) || [];      
+            function saveinf(){
+            let studentid=document.getElementById("studentid"); 
+            let StudentName=document.getElementById("StudentName");  
+            let PhoneNamer=document.getElementById("PhoneNamer");  
+            let Education=document.getElementById("Education");  
+            let Emial=document.getElementById("Emial");  
+              let obj={
+               studentid:studentid.value,       
+               StudentName:StudentName.value,        
+               PhoneNamer:PhoneNamer.value,      
+               Education:Education.value,      
+               Emial:Emial.value        
+              }
+              Student.push(obj);
+              localStorage.setItem("Student",JSON.stringify(Student));
+             
+      
+             let formdata = JSON.parse(localStorage.getItem("Student")) ;
+              console.log(formdata);
+              var table =`<table >`
+                  table+="<tr>";
+                  table += "<th>" +"Id"+"</th>"
+                  table += "<th>" +"Student Name"+"</th>"
+                  table += "<th>" +"Phone Namer"+"</th>"
+                  table += "<th>" +"Education"+"</th>"
+                  table += "<th>" +"Emial"+"</th>"
+                  table+="</tr>";
+              formdata.map((e)=>{
+              table += "<tr>";
+              table+= "<td>"+e.studentid+"</td>";
+              table+= "<td>"+e.StudentName+"</td>";
+              table+= "<td>"+e.PhoneNamer+"</td>";
+              table+= "<td>"+e.Education+"</td>";
+              table+= "<td>"+e.Emial+"</td>";        
+              table+="</tr>";
+          })
+          table+="</table>";
+          document.getElementById("studentlist").innerHTML=table
+           
+          event.preventDefault();
+              }
+           
+      
+          
+            
+          
+            </script>
+             
+</body>
+</html>

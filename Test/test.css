@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  /* body{
+    background-image: url(back1.jpg);
+  } */
+  nav{
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    width: 90px;
+    background:#434372;
+    overflow:hidden;
+    transition:.5s;
+  }
+  
+  li {
+      margin-bottom: 60px;
+  text-decoration: none;
+  }
+  nav:hover{
+    width:280px;
+    transition:1s;
+  }
+  .logo{
+    text-align: center;
+    display: flex;
+    margin: 10px 0 0 10px;
+    padding-bottom:3rem;
+  }
+  
+  .logo img{
+    width: 45px;
+    height: 45px;
+    border-radius:50%;
+  }
+  .logo span{
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 20px;
+    text-transform:uppercase;
+  }
+  a{
+    position:relative;
+    width: 280px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    display:table;
+    padding: 10px;
+  }
+  nav .fa-solid{
+    position: relative;
+    width:70px;
+    height:50px;
+    top: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .nav-item{
+    position: relative;
+    top:10px;
+    margin-left: 10px;
+  }
+  a:hover{
+    background:rgb(159, 159, 159);
+  }
+  a:hover i{
+    color:rgb(0, 0, 0);
+    transition: 0.5s;
+  }
+  .logout{
+    position:absolute;
+    bottom: 0;
+  }
+  .container{
+    display: flex;
+  }
+
+
+
+  /* 11111111111111111111111111111111111111111111111 */
+
+
+.main {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+}
+
+.Orange {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 7% 0 5% 0%;
+}
+.Orange p {
+    font-weight: 500;
+    line-height: 2.4;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    color: rgb(24, 26, 26);
+    background-color: rgba(207, 221, 233, 0.5);
+    padding: 9px;
+}
+.Orange img {
+    border-radius: 50%;
+    box-shadow: 1px 3px 9px rgb(21, 119, 179);
+
+}
+.Orange h1 {
+        font-family: 'Annie Use Your Telescope', cursive;
+        font-size: xx-large;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+}
+

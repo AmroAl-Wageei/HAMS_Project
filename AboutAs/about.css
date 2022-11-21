@@ -1,0 +1,346 @@
+
+
+
+.sidebarAbout {
+    position: fixed;
+    width : 70px;
+    top :0;
+    left: 0;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+    transition: 1s;
+    height: 100vh;
+}
+.sidebarAbout:hover {
+    transition: 1s;
+    width : 280px;
+ }
+
+ .logo {
+    text-align: center;
+    display: flex;
+    margin: 10px 0 0 0;
+    padding-bottom: 3rem;
+}
+.logo img {
+    width: 90px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.logo span {
+    font-weight: bold;
+    font-size:18px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    color: #47a0b4;
+}
+.dd {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+    color: #1b0f0f; 
+    margin-bottom: 50px;
+}
+
+.fa-solid {
+    display: inline;
+    width: 70px;
+    height: 40px;
+    top : 20px;
+    font-size: 20px;
+    text-align: center; 
+    color: #151212;
+    margin-left: 15px;
+}
+.fa-solid:hover {
+     
+    color: #4b5276;   
+}
+.sidebarAbout a {
+    position: relative;
+    padding: 10px 0px;
+    color: rgb(8, 7, 7);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-family: "Rubik";
+    margin-left:30px;
+}
+
+.sidebarAbout a:hover {
+  transition: 0.8s;
+  color: rgb(214, 198, 198);
+}
+
+.sidebarAbout h1 {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-family: "Rubik";
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.sidebarAbout img {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-family: "Rubik";
+    left: 0;
+}
+#LogAbout {
+    margin-top: 220px;
+}
+
+
+
+
+
+.main {
+    position: relative;
+    padding: 20px;
+    width: 100%;
+}
+
+
+
+
+
+
+.main .user {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.user .card {
+    width: 50%;
+    margin: 10px;
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 1px 3px 9px rgb(21, 119, 179);
+    /* background-image: url('../Images/oran.jfif');
+    background-size: cover; */
+    position:relative;
+    right: 0;
+    margin: 10px 30px;
+    color : rgb(110, 109, 109);
+    cursor: pointer;
+}
+
+.user .card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.user .card h4 {
+    text-transform: uppercase;
+}
+
+.user .card p {
+    font-size:12px ;
+    margin-bottom:15px ;
+    text-transform: uppercase;
+}
+
+
+.user .per span {
+    padding: 5px;
+    border-radius: 10px;
+    background: rgb(223, 223, 223);
+}
+
+
+.user .card button {
+    width: 60%;
+    margin-top: 20px;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid rgb(50, 71, 114);
+}
+
+.user .card button:hover {
+    background: rgb(103, 103, 128);
+    color: #fff;
+    transition: 0.5s;
+}
+
+/* ........................................... */
+.Orange {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 7% 0 5% 0%;
+}
+
+.Orange p {
+    font-weight: 500;
+    line-height: 2.4;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    color: rgb(24, 26, 26);
+    background-color: rgba(207, 221, 233, 0.5);
+    padding: 9px;
+
+}
+
+.Orange img {
+    border-radius: 50%;
+    box-shadow: 1px 3px 9px rgb(21, 119, 179);
+
+}
+
+
+.Goal {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 7%;
+
+}
+.Goal ul {
+    font-weight: 500;
+    line-height: 2.5;
+    font-family: 'Manrope', sans-serif;
+    text-align: start;
+    margin-right: 3%;
+    margin-left: 10%;
+}
+.Goal ul li {
+    padding: 5px;
+}
+
+.Goal img {
+    border-radius: 50%;
+    margin-left: 40%;
+width: 350px;
+height: 90%;
+box-shadow: 1px 3px 9px rgb(21, 119, 179);
+
+}
+
+
+
+
+/* ...................................... */
+
+.Cards {
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(2,1fr);
+        width: 90%;
+        margin-left: 10%;
+        grid-row-gap: 20px;
+}
+
+.top h1 {
+    text-align: center;
+    font-weight: 600;
+    color: brown;
+}
+
+
+h1 {
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: xx-large;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 75%;
+    margin: 10px;
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 1px 3px 9px rgb(21, 119, 179);
+    /* background-image: url('../Images/oran.jfif');
+    background-size: cover; */
+}
+
+.card img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    padding-top: 10px;
+}
+
+.card h4 {
+    text-transform: uppercase;
+}
+
+.card span {
+    font-size:12px ;
+    margin-bottom:15px ;
+    text-transform: uppercase;
+}
+
+.card button {
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid rgb(50, 71, 114);
+}
+
+.card button:hover {
+    background: rgb(103, 103, 128);
+    color: #fff;
+    transition: 0.5s;
+}
+.partner {
+    margin-bottom: 8%;
+}
+.partner p {
+
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    height: 150px;
+    margin-left: 10%;
+}
+
+.partner p img{
+
+    border-radius: 10%;
+    box-shadow: 1px 3px 9px rgb(21, 119, 179);
+    margin-bottom: 100px;
+
+}
+.partner h1 {
+padding: 50px;
+}
+#part {
+    margin: 0 50%;
+}
+
+.top h1 {
+
+    margin-bottom: 80px;
+    color: rgb(27, 58, 96);
+
+}
+
+h1 {
+    color: rgb(27, 58, 96);
+}
+body {
+    background-color: #E9F7FA;
+    background-color: #F2F2F2;
+}

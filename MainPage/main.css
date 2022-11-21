@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* overflow-y: hidden; */
+    
+
+}
+body{
+   background-image:url(../Images/1\ \(2\).jpg);
+    width: 100%;
+    /* height: 50vh; */
+    background-size: cover;
+    background-repeat: calc();
+}  
+.f{
+    display: flex;
+    justify-content: center;
+   margin-top: 10px;
+}
+img{
+   width: 400px; 
+} 
+.content{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    }
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+    color: rgb(59, 92, 255);
+    
+}    
+.content p:nth-child(2){
+    margin: 20px auto;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 25px;
+    color: rgb(24, 26, 26);
+    background-color: rgba(240, 248, 255,0.5);
+    padding: 10px;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 3px solid #518ed4;
+    background: transparent;
+    box-shadow: 3px 10px 10px #313571;
+    color: rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+    }
+span{
+    background: #466482;
+    height: 100%;
+    width: 0px;
+    border-radius: 25px;
+    /* position: absolute; */
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}    
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    scale: 20;
+}
+
+.btn {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 6% 25%;
+}
+.btn p {
+    margin-top: 90px;
+    /* margin-left: 20px; */
+    
+}
+#btnreg {
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+font-weight: bold;
+}
+#btnlog {
+    font-family: sans-serif;
+    margin-top: 10px;
+    margin-left: 13%;
+    font-size: 16px;
+font-weight: bold;
+}
+img {
+    width: 350px;
+    margin-top: 15px;
+    border-radius: 90%;
+    margin-right: 30px;
+}
+
+#para {
+    font-weight: 500;
+    line-height: 2;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+#para ::grammar-error{
+    box-shadow: 3px 10px 10px #313571;
+
+}
+
+h2 {
+    padding: 20px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+}
+@media(max-width :1033px){
+    .content p{
+           font-size: 25px;
+    }
+    
+
+}
